@@ -1,0 +1,24 @@
+{
+  "name": "spotify-search",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MartinCreate/bc-spotify-search-api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MartinCreate/bc-spotify-search-api/issues"
+  },
+  "homepage": "https://github.com/MartinCreate/bc-spotify-search-api#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "handlebars": "^4.7.6",
+    "node": "^14.4.0"
+  }
+}
