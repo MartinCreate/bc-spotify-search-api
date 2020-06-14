@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Spotify</title>
+    </head>
+    <body>
+        <header>
+            <h1><span id='spotify'>Spotify</span> Search</h1>
+            <div class="xperiment">
+            <input type="text" name="user-input" /><span class='focus-border'></span>
+            </div>
+            <select>
+                <option id="artist">artist</option>
+                <option id="album">album</option>
+             </select>
+
+            <button id="submit-btn">submit</button>
+            <div class="resultsFound"></div>
+        </header>
+        <div class='center'>
+            <div class="bigContainer">
+                <div id="results-container"></div>
+            </div>
+            <div class="moreButton">
+                <button id="more">More</button>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,160 @@
+body {
+    background-color: rgba(0, 0, 0, 0.904);
+    margin: 0;
+}
+
+header {
+    position: fixed;
+    display: flex;
+    height: 60px;
+    align-items: baseline;
+    justify-content: flex-start;
+    /* border: 1px red solid; */
+    width: 100%;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.89);
+}
+
+h1 {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    letter-spacing: 2px;
+    color: white;
+    justify-self: flex-start;
+    margin: 20px 30px;
+    margin-top: 10px;
+}
+
+#spotify {
+    color: #1db954;
+}
+
+.focus-border {
+    /* position: absolute; */
+    width: 0;
+    height: 2px;
+    background-color: #3399ff;
+    transition: 0.4s;
+}
+
+input {
+    /* border-radius: 5px; */
+    margin-right: 20px;
+    border: none;
+    border-bottom: 1px white solid;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    font-size: 20px;
+}
+
+input:focus {
+    outline: none;
+    border-bottom: 2px white solid;
+}
+
+select {
+    /* height: 25px; */
+    margin-right: 20px;
+}
+
+#submit-btn {
+    margin-right: 40px;
+    font-size: 20px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    letter-spacing: 2px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0;
+    border-bottom: 1px white solid;
+    cursor: pointer;
+}
+
+.resultsFound {
+    font-family: arial;
+    color: white;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.center {
+    margin-top: 80px;
+    position: absolute;
+    width: 100%;
+}
+
+.bigContainer {
+    display: flex;
+    /* border: 1px green solid; */
+    width: 100%;
+    justify-content: center;
+}
+
+#results-container {
+    width: 90vw;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 300px;
+    gap: 30px;
+    /* border: 1px red solid; */
+}
+
+.result {
+    /* border: 1px green solid; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(94, 94, 94);
+    border-radius: 20px;
+    text-align: center;
+}
+
+img {
+    height: 200px;
+    width: 250px;
+    object-fit: cover;
+    border-radius: 3px;
+    filter: brightness(0.9);
+}
+
+img:hover {
+    filter: brightness(1);
+    transform: scale(1.01);
+    transition-duration: 0.2s;
+}
+
+#link {
+    text-decoration: none;
+}
+.artistName {
+    color: white;
+    font-family: Arial;
+    margin-top: 5px;
+}
+
+.artistName:hover {
+    text-decoration: underline;
+}
+
+#submit-btn {
+    margin-bottom: 20px;
+    margin-right: 100px;
+}
+
+#more {
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-family: Arial;
+    font-weight: bold;
+    color: black;
+    visibility: hidden;
+    cursor: pointer;
+    border: 2px black solid;
+}
+
+.moreButton {
+    text-align: center;
+    margin: 20px 0;
+    /* margin-bottom: 20px; */
+}
