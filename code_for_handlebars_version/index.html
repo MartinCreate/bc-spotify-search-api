@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Spotify</title>
+    </head>
+    <body>
+        <header>
+            <h1><span id="spotify">Spotify</span> Search</h1>
+            <div class="xperiment">
+                <input type="text" name="user-input" /><span
+                    class="focus-border"
+                ></span>
+            </div>
+            <select>
+                <option id="artist">artist</option>
+                <option id="album">album</option>
+            </select>
+
+            <button id="submit-btn">submit</button>
+            <div class="resultsFound"></div>
+        </header>
+        <div class="center">
+            <div class="bigContainer">
+                <div id="resultsContainer"></div>
+            </div>
+            <div class="moreButton">
+                <button id="more">More</button>
+            </div>
+        </div>
+        <script id="handleB" type="text/x-handlebars-template">
+            {{#items}}
+            <div class="result">
+                <a href="{{external_urls.spotify}}">
+                    {{#if images.0.url}}
+                    <img class="image" src="{{images.0.url}}"
+                    >
+                    {{else}}
+                    <img class="image" src="default.jpg"
+                    >
+                    {{/if}}
+                </a>
+                <a id="link" href="{{external_urls.spotify}}">
+                    <div class="artistName">{{name}}</div>
+                </a>
+            </div>
+            {{/items}}
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
